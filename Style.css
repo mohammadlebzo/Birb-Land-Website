@@ -1,0 +1,46 @@
+body{
+ background-color: black;
+}
+
+header{
+  background-color: orange;
+
+}
+
+main{
+  background-color: black;
+}
+
+Footer{
+  background-color: orange;
+}
+
+nav a{
+  display:inline-block;
+  padding: 10px;
+  color: blue;
+}
+
+section{
+  padding:6px;
+  
+}
+
+.logo{
+  width: 80px;
+  
+}
+
+.picBack{
+  background-color: orange;
+  display:inline-block; vertical-align:middle; padding: 10px;
+}
+
+.container{
+  display: flex;
+  
+}
+
+.imgText{
+  color: orange;
+}
