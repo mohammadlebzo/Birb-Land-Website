@@ -7,7 +7,7 @@ function takeInput()
   let favBird = prompt("which is your favorite bird ? \n Cockatiel \n Cockatoo \n Casco");
   console.log(favBird);
   
-  let massage = name + "'s favorite bird is:" + favBird;
+  let massage = name + "'s favorite bird is: " + favBird;
 
   if(favBird == "Cockatiel" || favBird == "cockatiel")
   {
