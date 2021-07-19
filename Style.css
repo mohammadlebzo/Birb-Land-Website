@@ -1,34 +1,40 @@
-body{
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body main{
  background-color: black;
  min-height: 100vh;
+ width: 100%;
  display: flex;
-    flex-direction: column;
+ flex-direction: column;
 }
 
 header{
   background-color: orange;
-  
+  border: 5px double black;
 }
 
-main{
-  background-color: black;
+main img{
+  width: 100%;
+  border: 6px double orange;
 }
 
 Footer{
   background-color: orange;
   height: 50px;
   margin-top: auto;
+  border: 5px double black;
 }
+
+
 
 nav a{
   display:inline-block;
   color: blue;
   padding-left: 50px;
-}
-
-section{
-  padding:6px;
-  
 }
 
 h1{
@@ -38,8 +44,11 @@ h1{
 button{
   background:#808080; 
   color:white;
-  height:50px;
+  height: 30px;
+  width: 250px;
   font-size: 20px;
+  border: 4px double orange;
+  margin: 5px
 }
 
  header div{
@@ -48,8 +57,9 @@ button{
   padding-left: 10px;
 }
 
-div section p{
+main div p{
   color: orange;
+  text-align: center;
 }
 
 .logo{
@@ -67,8 +77,24 @@ div section p{
   
 }
 
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #fav{
   color: white;
   font-size: 25px;
+  margin-left: 10px;
   margin-top: 30px;
+  padding: 5px;
 }
+
+
