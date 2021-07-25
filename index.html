@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Birb Land</title>
 <link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>
@@ -24,40 +25,53 @@
   <a href="https://birb-land-website.mohammadlebzo.repl.co/"> Home</a>
   <a href="">Support</a>
 </nav>
-<hr>
 <!-- head links -->
 
 </header>
 
-<Main>
+<main>
 <!-- images -->
-<center>
-  <div class="container">
-    <section>
-      <img src="https://www.vogelkweker.be/wp-content/uploads/2020/11/cockatiel-4084017_1920.jpg" alt="Cockatiel Bird" width="500" height="350"> 
-      <P> Cockatiel Bird </P>
-    </section>
+  <div class="row">
 
-    <section>
-       <img src="https://img1.wsimg.com/isteam/ip/1e359bb4-cabe-4e03-bd77-8db8ba90a350/ols/My%20Post%20-%202020-09-25T182519.410.png/:/rs=w:1200,h:1200" alt="Cockatoo Birb"  width="500" height="350">
-      <P> Cockatoo Bird </P>
-    </section>
- 
-    <section>
-      <img src="https://www.marylandzoo.org/wp-content/uploads/2017/10/african_grey_web-1024x683.jpg" alt="Casco Birb"  width="500" height="350">
-      <P> Casco Bird  </P>
-    </section>
+    <div class="column">
+      <div class="container">
+      <img src="https://www.vogelkweker.be/wp-content/uploads/2020/11/cockatiel-4084017_1920.jpg" class="image" alt="" >
+        <div class="middle">
+            <div class="text">Cockatiel</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="container">
+        <img src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/117500151/1800" class="image" alt="" >
+        <div class="middle">
+              <div class="text">Cockatoo</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="column">
+    <div class="container">
+        <img src="https://www.marylandzoo.org/wp-content/uploads/2017/10/african_grey_web-1024x683.jpg" class="image" alt="" >
+        <div class="middle">
+            <div class="text">Casco</div>
+        </div>
+      </div>
+    </div>
+
   </div>
-</center>
 <!-- images -->
 
-<button type="button" onclick="takeInput()">which is your favorite ?</button>
-<div id="fav"> xxxxxx </div>
+<button class="button" type="button" onclick="takeInput()"><span>Which is your favorite ?</span></button>
+<div id="fav"><p> xxxxxxx </p></div>
+
+<button class="button" type="button" onclick="starRating()"><span>Rate Please!</span></button>
+<div id="rate" class="rowR"> Rate</div>
 
 </Main>
 
 <Footer>
-  <hr>
 <center>
   <a href="https://github.com/mohammadlebzo"> My GitHub</a>
 </center>

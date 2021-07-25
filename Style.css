@@ -1,56 +1,98 @@
-body{
+                    /*General*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+                    /*General*/
+
+                    /*Body Main*/      
+body main{
  background-color: black;
  min-height: 100vh;
+ width: 100%;
  display: flex;
-    flex-direction: column;
+ flex-direction: column;
 }
 
 header{
-  background-color: orange;
-  
+  background-color: rgba(255, 166, 0, 0.912);
+  border: 5px double black;
 }
 
-main{
-  background-color: black;
+main img{
+  width: 100%;
+  border: 6px double orange;
 }
 
 Footer{
   background-color: orange;
   height: 50px;
   margin-top: auto;
+  border: 5px double black;
 }
 
+                    /*Body Main*/  
+
+                    /*Random*/  
 nav a{
   display:inline-block;
   color: blue;
   padding-left: 50px;
 }
 
-section{
-  padding:6px;
-  
-}
-
 h1{
   color: white;
 }
-
-button{
-  background:#808080; 
-  color:white;
-  height:50px;
-  font-size: 20px;
-}
-
  header div{
   display:inline-block;
   vertical-align:middle;
   padding-left: 10px;
 }
+                    /*Random*/  
 
-div section p{
-  color: orange;
+                    /*Button Stuff*/
+button{
+  background:#808080; 
+  color:white;
+  height: 30px;
+  width: 250px;
+  font-size: 20px;
+  border: 4px double orange;
+  margin: 5px;
+
+  transition: all 0.5s;
+  cursor: pointer;
 }
+
+                                        /*Classes and ID*/  
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+                    /*Button Stuff*/
+
+
 
 .logo{
   width: 80px;
@@ -62,13 +104,114 @@ div section p{
   display:inline-block; vertical-align:middle; padding: 10px;
 }
 
-.container{
-  display: flex;
-  
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnR{
+  float: left;
+  padding: 2px;
+}
+
+.rowR::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.checked {
+  color: orange;
+}
+
+.empty {
+  color: white;
 }
 
 #fav{
-  color: white;
+  color: white; 
   font-size: 25px;
-  margin-top: 30px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: black;
+}
+
+#rate
+{ 
+  color: orange; 
+  font-size: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 200px;
+  height: 500px;
+  padding: 5px;
+}
+
+main div p{
+  color: white; 
+  font-family: "Arial";
+  font-size: 25px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+ /*added animation property to show the character one at a time*/
+  animation: type 8s steps(60, end); 
+}
+
+@keyframes type{ 
+  from { 
+        width: 0; 
+        } 
+}
+
+/* test */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: orange;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
 }
