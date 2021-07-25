@@ -29,7 +29,7 @@ function takeInput()
 
 function starRating()
 {
-  let rating = prompt("What is your name ?");
+  let rating = prompt("How much would you rate the website ?");
   console.log(rating);
 
   let fullStar = "";

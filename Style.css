@@ -1,12 +1,16 @@
+
                     /*General*/
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
                     /*General*/
 
                     /*Body Main*/      
+
 body main{
  background-color: black;
  min-height: 100vh;
@@ -16,7 +20,7 @@ body main{
 }
 
 header{
-  background-color: rgba(255, 166, 0, 0.912);
+  background-color: orange;
   border: 5px double black;
 }
 
@@ -35,6 +39,7 @@ Footer{
                     /*Body Main*/  
 
                     /*Random*/  
+
 nav a{
   display:inline-block;
   color: blue;
@@ -59,10 +64,12 @@ button{
   width: 250px;
   font-size: 20px;
   border: 4px double orange;
+
   margin: 5px;
 
   transition: all 0.5s;
   cursor: pointer;
+
 }
 
                                         /*Classes and ID*/  
@@ -72,6 +79,7 @@ button{
   position: relative;
   transition: 0.5s;
 }
+
 
 .button span:after {
   content: '\00bb';
@@ -89,6 +97,10 @@ button{
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+main div p
+{
+  color: orange;
 }
                     /*Button Stuff*/
 
@@ -109,6 +121,7 @@ button{
   width: 33.33%;
   padding: 5px;
 }
+
 
 .row::after{
   content: "";
@@ -132,10 +145,11 @@ button{
 }
 
 .empty {
-  color: white;
+ color: white;
 }
 
-#fav{
+#fav
+{
   color: white; 
   font-size: 25px;
   margin-left: 10px;
@@ -214,4 +228,10 @@ main div p{
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+
+  margin-top: 30px;
+  
+
 }
+
+
